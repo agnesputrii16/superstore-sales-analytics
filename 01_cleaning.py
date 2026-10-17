@@ -29,5 +29,5 @@ print(df["Discount Group"].value_counts())
 print("Jumlah transaksi rugi:", df["Is Loss"].sum())
 
 # 4. Simpan data bersih
-df.to_csv(r"D:\superstore-analysis\superstore_clean.csv", index=False)
+df.to_csv(r"\superstore-analysis\superstore_clean.csv", index=False)
 print("Selesai, file bersih tersimpan")

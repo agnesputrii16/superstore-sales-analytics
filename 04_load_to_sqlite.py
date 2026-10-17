@@ -18,7 +18,7 @@ df.columns = (
 df["order_date"] = df["order_date"].dt.strftime("%Y-%m-%d")
 df["ship_date"] = df["ship_date"].dt.strftime("%Y-%m-%d")
 
-conn = sqlite3.connect(r"D:\superstore-analysis\superstore.db")
+conn = sqlite3.connect(r"\superstore-analysis\superstore.db")
 df.to_sql("sales", conn, if_exists="replace", index=False)
 
 print(pd.read_sql("SELECT COUNT(*) AS jumlah_baris FROM sales", conn))
